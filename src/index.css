@@ -1,3 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #dadada;
+  color: #1f2023;
+  @theme {
+    --color-light: oklch(0.60 0.08 190);
+    --color-dark: oklch(0.20 0.08 260);
+
+    --color-accent-pink: oklch(0.65 0.10 330);
+    --color-accent-cyan: oklch(0.65 0.09 190);
+    --color-accent-orange: oklch(0.68 0.10 40);
+    --color-accent-purple: oklch(0.58 0.09 280);
+    --color-accent-mint: oklch(0.70 0.10 170);
+    --color-accent-yellow: oklch(0.72 0.11 95);
+    --color-accent-magenta: oklch(0.62 0.10 345);
+    --color-accent-blue: oklch(0.55 0.08 240);
+    --color-deep-blue: oklch(0.35 0.08 250);
+  }
+}
