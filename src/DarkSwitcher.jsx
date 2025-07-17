@@ -16,7 +16,7 @@ function ToggleTheme() {
         setTheme(theme === 'light' ? 'dark':'light');
     }
   return (
-    <button onClick={toggleTheme} className=''> {theme === 'light' ? <FontAwesomeIcon icon={faMoon} className="text-text-light" /> : <FontAwesomeIcon icon={faSun} className="text-yellow-400" />}</button>
+    <button onClick={toggleTheme} className=''> {theme === 'light' ? <FontAwesomeIcon icon={faMoon} className="text-text-light p-4 lg:px-6" /> : <FontAwesomeIcon icon={faSun} className="text-yellow-400 p-4 lg:px-6" />}</button>
   )
 }
 
