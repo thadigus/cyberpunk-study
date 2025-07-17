@@ -4,7 +4,18 @@ This is a cyberpunk-themed ambient music player that mixes cyberpunk music with 
 
 This project was written as a learning experience as I try to teach myself some front end development. A great deal of this app is vibe coded while I try to learn. All of this is inspired, of course, by the LofiATC project and hopefully we can fill a gap now that it has been taken down.
 
-# 📦 Getting Started
+# 📦 Getting Started - Docker (Recommended)
+
+### Clone the repo
+```shell
+git clone https://github.com/thadigus/cyberpunk-study.git
+cd cyberpunk-study
+docker build -t cyberpunk-study -f ./.devcontainer/Dockerfile .
+```
+
+Open <http://localhost:5173/cyberpunk-study/>
+
+# 📦 Getting Started - Local Development
 
 ### Clone the repo
 ```shell
@@ -17,6 +28,8 @@ cd cyberpunk-study
 
 ### Start the dev server
 `npm run dev`
+
+Open <http://localhost:5173/cyberpunk-study/>
 
 # 🌐 Live Demo
 

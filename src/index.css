@@ -5,8 +5,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #dadada;
-  color: #1f2023;
   @theme {
     --color-vaporwavePink: oklch(0.7474 0.2 342.96);
     --color-vaporwavePurple: oklch(0.7875 0.1468 223.22);
