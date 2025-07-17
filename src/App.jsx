@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="
       min-h-screen flex flex-col
-      bg-light text-dark dark:bg-dark dark:text-light
+      vaporwave-background text-text-light dark:text-text-dark
       ">
       <Header/>
     </div>

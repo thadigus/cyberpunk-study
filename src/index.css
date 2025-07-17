@@ -8,17 +8,30 @@ body {
   background-color: #dadada;
   color: #1f2023;
   @theme {
-    --color-light: oklch(0.60 0.08 190);
-    --color-dark: oklch(0.20 0.08 260);
+    --color-vaporwavePink: oklch(0.7474 0.2 342.96);
+    --color-vaporwavePurple: oklch(0.7875 0.1468 223.22);
+    --color-vaporwaveYellow: oklch(0.8808 0.2064 157.77);
 
-    --color-accent-pink: oklch(0.65 0.10 330);
-    --color-accent-cyan: oklch(0.65 0.09 190);
-    --color-accent-orange: oklch(0.68 0.10 40);
-    --color-accent-purple: oklch(0.58 0.09 280);
-    --color-accent-mint: oklch(0.70 0.10 170);
-    --color-accent-yellow: oklch(0.72 0.11 95);
-    --color-accent-magenta: oklch(0.62 0.10 345);
-    --color-accent-blue: oklch(0.55 0.08 240);
-    --color-deep-blue: oklch(0.35 0.08 250);
+    --color-background-light: oklch(0.95 0.02 0);
+    --color-background-dark: oklch(0.10 0.02 0);
+    --color-header-light: oklch(0.95 0.02 0);
+    --color-header-dark: oklch(0.10 0.02 0);
+    --color-text-light: oklch(0.10 0.02 0);
+    --color-text-dark: oklch(0.90 0.02 0);
+    --color-border-light: oklch(0.90 0.02 0);
+    --color-border-dark: oklch(0.20 0.02 0);
+
+
+
+  }
+}
+
+@layer utilities {
+  .vaporwave-background {
+      background: linear-gradient(to bottom, #2b0a3d, #7f167f, #0f4c75);
+  }
+
+  .dark .vaporwave-background {
+      background: linear-gradient(to bottom, #15002b, #300030, #0a1a40, #00303d);
   }
 }
